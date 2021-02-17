@@ -41,6 +41,7 @@ def monthly_precip(month):
     return session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == month).all()
 
 june_precip_results = monthly_precip(6)
+
 dec_precip_results = monthly_precip(12)
 
 ### Precipitation at the most active station (USC00519281) for the months of June and December:
@@ -49,4 +50,5 @@ def station_precip(month):
     return session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == month).all()
 
 june_station_precip_results = station_precip(6)
+
 dec_station_precip_results = station_precip(12)
