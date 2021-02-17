@@ -33,7 +33,7 @@ The temperatures are slightly higher in June, however, the temperatures in Decem
 
 This data set does not include temperatures for December 2017. Although it might not differ a lot from the previous years, it would be better if we could have the same year range to analyze both months.
 
-In order to provide more insights whether Oahu is the perfect location for the Shake 'n Surf shop, a more thorough analysis could be made by getting the total precipitation for the months of June and December and the precipitation at the most active station for the months of June and December.
+In order to provide more insights whether Oahu is the perfect location for the Shake 'n Surf shop, a more thorough analysis could be made by getting the precipitation for the months of June and December and the precipitation at the most active station for the months of June and December.
 
 ### Precipitation for the months of June and December:
 
