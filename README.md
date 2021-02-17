@@ -35,7 +35,7 @@ This data set does not include temperatures for December 2017. Although it might
 
 In order to provide more insights whether Oahu is the perfect location for the Shake 'n Surf shop, a more thorough analysis could be made by getting the total precipitation for the months of June and December and the precipitation at the most active station for the months of June and December.
 
-Total precipitation for the months of June and December:
+### Total precipitation for the months of June and December:
 
 def monthly_precip(month):
     return session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == month).all()
@@ -43,7 +43,7 @@ def monthly_precip(month):
 june_precip_results = monthly_precip(6)
 dec_precip_results = monthly_precip(12)
 
-Precipitation at the most active station (USC00519281) for the months of June and December:
+### Precipitation at the most active station (USC00519281) for the months of June and December:
 
 def station_precip(month):
     return session.query(Measurement.prcp).filter(Measurement.station == 'USC00519281').filter(extract('month', Measurement.date) == month).all()
